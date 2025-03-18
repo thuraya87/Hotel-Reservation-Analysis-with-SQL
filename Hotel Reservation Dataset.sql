@@ -41,8 +41,7 @@ FROM
 GROUP BY 
     type_of_meal_plan
 ORDER BY 
-    count DESC
-LIMIT 1;
+    count DESC LIMIT 1;
 
 -- 3. What is the average price per room for reservations involving children?
 SELECT 
@@ -69,8 +68,7 @@ FROM
 GROUP BY 
     room_type_reserved
 ORDER BY 
-    count DESC
-LIMIT 1;
+    count DESC LIMIT 1;
 
 -- 6. How many reservations fall on a weekend (no_of_weekend_nights > 0)?
 SELECT 
@@ -96,8 +94,7 @@ FROM
 GROUP BY 
     market_segment_type
 ORDER BY 
-    count DESC
-LIMIT 1;
+    count DESC LIMIT 1;
 
 -- 9. How many reservations have a booking status of "Confirmed"?
 SELECT 
@@ -164,8 +161,7 @@ WHERE
 GROUP BY 
     room_type_reserved
 ORDER BY 
-    count_children_reservations DESC
-LIMIT 1;
+    count_children_reservations DESC LIMIT 1;
 
 -- 15. Find the market segment type that generates the highest average price per room.
 SELECT 
